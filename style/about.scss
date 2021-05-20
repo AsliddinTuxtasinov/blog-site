@@ -1,0 +1,191 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+.about-main{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    hr{
+        height: 3px;
+        width: 75%;
+        margin: 0 auto;
+        background-color: black;
+    }
+
+    .about-top{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .left{
+            text-align: right;
+            width: 23.5%;
+
+            .avatar{
+                width: 80%;
+                border-radius: 5%;
+                outline: 0;
+            }
+        }
+
+        .right{
+            margin: 0 auto;
+            text-align: center;
+            width: 50%;
+        }
+    }
+
+    .about-bottom{
+        display: flex;
+        align-items: center;
+        
+        .left{
+            margin-left: 5.5%;
+            width: 18%;
+
+            .abput-ul{
+                font-size: larger;
+                margin: 10% 0;
+
+                ul{
+                    list-style-type: none;
+                    text-align: center;
+                    
+                    li{
+                        font-size: 75%;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .skills{
+                min-height: 130px;
+                text-align: center;
+                padding:  0;
+
+                .texna{
+                    margin-top: 5px;
+                    padding: 5px;
+                }
+
+                h4{ margin-bottom: 10px;}
+
+            }
+
+            .languages{
+                min-height: 120px;
+                text-align: center;
+                margin: 10% 0;
+                padding: 15% 0;
+                
+                p{
+                    font-size: 12px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    color: rgb(231, 79, 8);
+                    margin: 0;
+                }
+            }
+        }
+        .right{
+            margin: 0 auto;
+            width: 70%;
+            min-height: 400px;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+
+            a{
+                color: crimson;
+                font-size: x-small;
+            }
+
+            h3{
+                margin-top: 4%;
+                text-align: center;
+                color: rgb(45, 57, 58);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            h5{ margin: 1px; 
+                font-size: 20px;
+            }
+            p{ margin-top: 2px; font-size: medium;}
+
+            .about-me{
+                width: 100%;
+                text-align: justify;
+            }
+
+            .personal-projects{
+                width: 100%;
+
+                
+            }
+            
+            .education{
+                width: 100%;                
+            }
+
+        }
+    }
+
+
+}
+
+.contact-main{
+    background-color: #943126;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+
+    h5{
+        text-align: center;
+        margin: 1px;
+    }
+
+    .send-message, .subscribe{
+        width: 85%;
+        margin: 1px;
+    }
+
+
+}
+
+@media screen and (max-width: 731px) {
+    main{
+        .about-main{
+            .about-bottom{
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+
+
+                .left{
+                    margin: 0;
+                    width: 100%;
+
+                    .abput-ul, .skills, .languages{
+                        margin: 0;
+                    }
+
+                }
+
+                .right{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

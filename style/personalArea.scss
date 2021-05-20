@@ -1,0 +1,25 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main-personal{
+    width: 95%;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .container{
+
+        ul{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            list-style: none;
+        }
+    }
+
+}
